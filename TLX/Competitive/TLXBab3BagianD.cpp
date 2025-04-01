@@ -7,9 +7,29 @@ typedef pair<int, int> pii;
 #define pb push_back
 
 void solve() {
-   int n;
+   ll n, perubahan = 0;
+   vi angka;
    cin >> n;
-   
+   for (int i = 0; i<n; i++) {
+      ll input;
+      cin >> input;
+      angka.pb(input);
+   }
+   for (int i = 0; i<n; i++) {
+      for (int j = i+1; j<n; j++) {
+         if (angka[i]>angka[j]) {
+            int sementara;
+            sementara = angka[i];
+            angka[i] = angka[j];
+            angka[i] = sementara;
+            perubahan++;
+         }
+         else {
+         }
+      }
+      
+   }
+   cout << perubahan;
 }
 
 int main() {
