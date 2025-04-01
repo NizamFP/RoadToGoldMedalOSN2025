@@ -7,7 +7,8 @@ typedef pair<int, int> pii;
 #define pb push_back
 
 void solve() {
-   
+   int n;
+   cin >> n;
    
 }
 
