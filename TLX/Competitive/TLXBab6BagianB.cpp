@@ -6,16 +6,8 @@ typedef vector<int> vi;
 typedef pair<int, int> pii;
 #define pb push_back
 
-void (coba)
-
 void solve() {
-   int N, K;
-   cin >> N >> K;
-  for (int i = 0; i<N; i++) {
-    int array[K];
-    int max = 0;
-    
-  }
+   
    
 }
 
