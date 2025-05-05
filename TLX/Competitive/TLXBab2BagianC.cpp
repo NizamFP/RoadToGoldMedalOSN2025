@@ -41,3 +41,29 @@ int main() {
    sieveoferathosthenes();
    solve();
 }
+
+
+
+input numberofgoods
+loop while numberofgoods >=1
+    input goodsprice
+    totalpurchases = totalpurchases + goodsprice
+    numberofgoods = numberofgoods-1
+end loop
+input membershipstatus
+if membershipstatus = yes then
+    if totalpurchases >=200 then
+        output "your total is ", 80/100 * totalpurchases
+    else if totalpurchases>=100 then
+        output "your total is ", 90/100 * totalpurchases
+    else
+        output "your total is ", 95/100 * totalpurchases
+    end if
+else
+    if totalpurchases>=100 then
+    
+        output "your total is ", 95/100 * totalpurchases
+    else
+        output "your total is ", totalpurchases
+    end if
+end if

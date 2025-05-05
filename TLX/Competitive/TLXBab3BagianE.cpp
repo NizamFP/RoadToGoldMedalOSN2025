@@ -21,39 +21,9 @@ void solve() {
     vi min;
     vi max;
     for (int i = 0; i<Q; i++) {
-        ll inputx, inputy;
-        cin >> inputx >> inputy;
-        min.pb(inputx);
-        max.pb(inputy);
-    
-        while (indexawal <= indexakhir && found == false) {
-            int mid = (indexawal+indexakhir)/2;
-            if (A[mid] >= min[i]) {
-                indexmemenuhimin = mid;
-                indexakhir = mid - 1; //potential error lagi
-            }   
-            else {
-                indexawal = mid+1;
-            }
-            
-        }
-        found = false;
-        indexawal = 0;
-        indexakhir = N-1;
-        indexmemenuhimin = -1;
-        indexmemenuhimax = -1;
-        while (indexawal <= indexakhir && found == false) {
-            int mid = (indexawal+indexakhir)/2;
-            if (A[mid] <= max[i]) {
-                indexmemenuhimax = mid;
-                indexawal = mid + 1;//potential error lagi
-            }
-            else {
-                indexakhir = mid-1;
-            }
-            
-        }
-        cout << indexmemenuhimax-indexmemenuhimin +1 << "\n" ; 
+        int batasbawah, batasatas;
+        cin >> batasbawah >> batasatas;
+        cout << (upper_bound(A.begin(), A.end(), batasatas) - A.begin()) - (upper_bound(A.begin(), A.end(), batasbawah)-A.begin()) << "\n";
     }
     
    

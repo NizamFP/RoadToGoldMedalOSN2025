@@ -1,21 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-long long faktorial(int angka) {
-    if (angka <= 1) {
-        return 1;
-    }
-    else {
-        return angka*faktorial(angka-1);
-    }
-}
+int C(int )
+
 int main() {
-    long long N, A, B;
+    int N, A, B;
     long long hasil = 0;
-    long long m = 1000000007;
+    long long m = 1e9+7;
     cin >> N >> A >> B;
     for (int i = A; i<=B; i++) {
-        hasil = ((hasil % m) + ((faktorial(N)/(faktorial(N-i)*faktorial(i))) % m)) % m;
     }
     cout << hasil;
 }

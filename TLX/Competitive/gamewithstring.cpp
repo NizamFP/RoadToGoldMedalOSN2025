@@ -6,7 +6,6 @@ typedef vector<int> vi;
 typedef pair<int, int> pii;
 #define pb push_back
 
-
 void solve() {
     
     
